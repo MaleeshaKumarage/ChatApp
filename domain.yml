@@ -1,0 +1,40 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- Food_Ordering
+- About_Restaurant
+- Get_In_Touch
+- Created_By
+- How_Are_You
+- What_Can_You_Do
+- what_is
+entities:
+- Food_Type
+responses:
+  utter_greet:
+  - text: හායි....ඔයාට කොහොම්ද?
+  - text: කොහොමද ඉතින්?
+  - text: කොහොමද ඉතින් ඔයාට?
+  - text: හායි
+  utter_happy:
+  - text: මට ඔබට සහය විය හැක්කේ කෙසේද?
+  utter_goodbye:
+  - text: බායි
+  utter_iamabot:
+  - text: මම බොට් කෙනෙක්.
+  utter_cheer_up:
+  - text: aaaaa
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_happy
+- utter_goodbye
+- utter_iamabot
